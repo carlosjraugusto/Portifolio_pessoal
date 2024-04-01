@@ -1,0 +1,9 @@
+/.next
+/next-env.d.ts
+/next.config.mjs
+/node_modules
+/package-lock.json
+/package.json
+/public
+/README.md
+/tsconfig.json
