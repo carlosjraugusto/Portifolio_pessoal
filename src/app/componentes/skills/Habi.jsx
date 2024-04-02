@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
+'use client'
+import  React, { useState } from "react";
 import'./Habi.css'
 import { SKILLS }  from "./../utils/data";
-import Skillscard from "./Skillcard";
+import SkillsCard from "./Skillcard";
 
 
 
@@ -21,7 +21,7 @@ const Skills = () => {
         <div className="skills-content">
             <div className="skills">
                 {SKILLS.map((item) => (
-                    <Skillscard
+                    <SkillsCard
                     key={item.title}
                     iconUrl={item.icon}
                     title={item.title}
@@ -34,7 +34,7 @@ const Skills = () => {
                 </div>
 
             <div className="skills-info">
-               <Skillsinfocard
+               <SkillsInfoCard
                heading={selectedSkill.title}
                Skills={selectedSkill.skills}
                />

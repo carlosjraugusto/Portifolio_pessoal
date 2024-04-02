@@ -1,7 +1,7 @@
 import React from "react";
 import './Skllscard.css'
 
-const Skillscard = ({ title, iconUrl, isActive, onClick }) => {
+const SkillsCard = ({ title, iconUrl, isActive, onClick }) => {
     return (
        <div className={`skills-card ${isActive ? "active" : ""}`}
        onClick={ () => onClick()}
@@ -15,4 +15,4 @@ const Skillscard = ({ title, iconUrl, isActive, onClick }) => {
     )
 }
 
-export default Skillscard;
+export default SkillsCard;
