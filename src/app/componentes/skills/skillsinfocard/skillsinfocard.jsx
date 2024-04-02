@@ -2,12 +2,12 @@ import React from "react";
 import "./Skillsinfocard.css"
 
 
-const SkillsInfoCard  = ({ heading, skills }) => {
+const SkillsInfoCard  = ({ heading, Skills }) => {
     return <div className="skills-info-card">
         <h6>{heading}</h6>
 
         <div className="skills-info-content">
-            {skills.map((item, index) => (
+            {Skills.map((item, index) => (
                 <React.Fragment key={`skill_${index}`}>
                     <div className="skills-info">
                         <p>{item.skill}</p>

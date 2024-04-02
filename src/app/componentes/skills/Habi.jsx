@@ -1,49 +1,42 @@
 'use client'
-import  React, { useState } from "react";
-import'./Habi.css'
-import { SKILLS }  from "./../utils/data";
+import React, { useState } from "react";
+import './Habi.css';
+import { SKILLS } from "./../utils/data";
 import SkillsCard from "./Skillcard";
-
-
+import SkillsInfoCard from "./skillsinfocard/Skillsinfocard"; 
 
 const Skills = () => {
-
     const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
 
-        const handleSelectSkill = (data) => {
-            setSelectedSkill (data);
-        };
+    const handleSelectSkill = (data) => {
+        setSelectedSkill(data);
+    };
 
-    return ( 
-       <section className="Skills-container">
-       
-
-        <div className="skills-content">
-            <div className="skills">
-                {SKILLS.map((item) => (
-                    <SkillsCard
-                    key={item.title}
-                    iconUrl={item.icon}
-                    title={item.title}
-                    isActive={selectedSkill.teste === item.title}
-                    onClick={() => {
-                        handleSelectSkill(item);
-                    }}
-                    />
-                ))}
+    return (
+        <section className="Skills-container">
+            <div className="skills-content">
+                <div className="skills">
+                    {SKILLS.map((item) => (
+                        <SkillsCard
+                            key={item.title}
+                            iconUrl={item.icon}
+                            title={item.title}
+                            isActive={selectedSkill.teste === item.title}
+                            onClick={() => {
+                                handleSelectSkill(item);
+                            }}
+                        />
+                    ))}
                 </div>
-
-            <div className="skills-info">
-               <SkillsInfoCard
-               heading={selectedSkill.title}
-               Skills={selectedSkill.skills}
-               />
+                <div className="skills-info">
+                    <SkillsInfoCard
+                        heading={selectedSkill.title} 
+                        Skills={selectedSkill.skills}
+                    />
+                </div>
             </div>
-        </div>
-       </section>
-
-       
+        </section>
     );
-}
+};
 
-export default Skills
+export default Skills;
