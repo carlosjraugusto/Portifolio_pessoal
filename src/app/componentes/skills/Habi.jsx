@@ -8,7 +8,7 @@ import Skillscard from "./Skillcard";
 const Skills = () => {
     return ( 
        <section className="Skills-container">
-        <h5>Proficiência Técnica</h5>
+       
 
         <div className="skills-content">
             <div className="skills">
