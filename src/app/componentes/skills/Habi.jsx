@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import'./Habi.css'
 import { SKILLS }  from "./../utils/data";
 import Skillscard from "./Skillcard";
@@ -6,6 +6,13 @@ import Skillscard from "./Skillcard";
 
 
 const Skills = () => {
+
+    const [selectedSkills, setSelectedSkills] = useState(SKILLS[0]);
+
+        const handleSelectSkills {data} => {
+            setSelectedSkills (data);
+        };
+
     return ( 
        <section className="Skills-container">
        

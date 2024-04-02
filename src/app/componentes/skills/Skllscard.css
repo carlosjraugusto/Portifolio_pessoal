@@ -9,7 +9,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
 
-}
+} 
 
 .skills-card:hover, 
 .skills-card:active {
@@ -67,7 +67,7 @@
 @media ( max-width: 768px) {
     .skills-card span {
         font-size: 0.9rem;
-        
+
     }
 }
 
