@@ -18,7 +18,7 @@ const Hero = () => {
                 </div>
                      <img className="log" src="./assts/imagem/WhatsApp Image 2024-04-01 at 17.13.01.jpeg" alt="" />
             </div>
-            <div  className="tech-icon">
+            <div  className="">
                 <div className="tech-icon">
                     <img src="./assts/imagem/HTML5_without_wordmark_color_Logo_PNG_Vector__SVG__Free_Download-removebg-preview (1).png" alt="" />
                 </div>
