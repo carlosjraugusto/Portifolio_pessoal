@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 import'./Habi.css'
 import { SKILLS }  from "./../utils/data";
 import Skillscard from "./Skillcard";
@@ -7,10 +8,10 @@ import Skillscard from "./Skillcard";
 
 const Skills = () => {
 
-    const [selectedSkills, setSelectedSkills] = useState(SKILLS[0]);
+    const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
 
-        const handleSelectSkills {data} => {
-            setSelectedSkills (data);
+        const handleSelectSkill = (data) => {
+            setSelectedSkill (data);
         };
 
     return ( 
@@ -24,11 +25,20 @@ const Skills = () => {
                     key={item.title}
                     iconUrl={item.icon}
                     title={item.title}
+                    isActive={selectedSkill.teste === item.title}
+                    onClick={() => {
+                        handleSelectSkill(item);
+                    }}
                     />
                 ))}
                 </div>
 
-            <div className="skills-info"></div>
+            <div className="skills-info">
+               <Skillsinfocard
+               heading={selectedSkill.title}
+               Skills={selectedSkill.skills}
+               />
+            </div>
         </div>
        </section>
 
