@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="tech-icon">
                     <img src="./assts/imagem/Developer_Stickers_for_Sale-removebg-preview.png" alt="" />
                 </div>
-                     <img className="log" src="./assts/imagem/WhatsApp Image 2024-04-01 at 17.13.01.jpeg" alt="" />
+                     <img className="hero" src="./assts/imagem/WhatsApp Image 2024-04-01 at 17.13.01.jpeg" alt="" />
             </div>
             <div  className="">
                 <div className="tech-icon">
