@@ -17,24 +17,25 @@
     border-bottom: 1.5px solid #6751b9;
 }
 
-.skills-info {
+.skills-info-content {
     padding: 2rem;
+   
 
 }
 
-.skills-info {
-    display: flex;
+.skill-info {
+    display: flex; 
     align-items: center;
     justify-content: space-between;
     
 }
 
-.skills-info p {
+.skill-info p {
     font-size: 1rem;
     font-weight: 500
 }
 
-.skills-info .percentage {
+.skill-info .percentage {
     color: rgb(62, 50, 168);
 }
  
